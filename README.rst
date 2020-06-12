@@ -2,7 +2,7 @@ Matrix iOS SDK 0.6.17 (Forked for juuj)
 ==================================
 
 Resetting to Version 0.6.17
-====
+------
 
 This library was forked from latest version of repository using the following steps:
 
@@ -13,6 +13,12 @@ This library was forked from latest version of repository using the following st
 5)  New local version (0.6.17) was pushed back to forked GitHub repository (`$ git push --force`)
 6)  Repository was renamed to matrix-ios-sdk-v0.6.17 (https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git)
 
+Installing Pod
+-------
+
+Add the following line in the relevant pod file, replacing the old reference::
+
+`pod 'MatrixSDK', :git => 'https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git'`
 
 Introduction (Relates to Latest MatrixSDK)
 ==================
