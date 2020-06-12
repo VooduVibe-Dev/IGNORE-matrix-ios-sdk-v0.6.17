@@ -1,5 +1,20 @@
-Matrix iOS SDK
-==============
+Matrix iOS SDK 0.6.17 (Forked for juuj)
+==================================
+
+Resetting to Version 0.6.17
+====
+
+This library was forked from latest version of repository using the following steps:
+
+1)  Latest MatrixKit library (https://github.com/matrix-org/matrix-ios-sdk.git) was forked to VooduVibe-Dev
+2)  Forked library was cloned to local drive (`$ git clone https://github.com/VooduVibe-Dev/matrix-ios-sdk.git`)
+3)  Cloned version on local drive was reset to version 0.6.17 (`$ git reset c8792a1`) dated 30 Sep 2016
+4)  Changes were removed (`$ git add && git stash`)
+5)  New local version (0.6.17) was pushed back to forked GitHub repository (`$ git push --force`)
+
+
+Introduction (Relates to Latest MatrixSDK)
+==================
 
 This open-source library allows you to build iOS apps compatible with Matrix
 (http://www.matrix.org), an open standard for interoperable Instant Messaging
