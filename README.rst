@@ -18,7 +18,7 @@ Installing Pod
 
 Add the following line in the relevant pod file, replacing the old reference::
 
-`pod 'MatrixSDK', :git => 'https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git'`
+$ pod 'MatrixSDK', :git => 'https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git'
 
 Introduction (Relates to Latest MatrixSDK)
 ==================
