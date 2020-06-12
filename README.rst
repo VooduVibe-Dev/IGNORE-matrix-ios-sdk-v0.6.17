@@ -8,7 +8,7 @@ This library was forked from latest version of repository using the following st
 
 1)  Latest MatrixKit library (https://github.com/matrix-org/matrix-ios-sdk.git) was forked to VooduVibe-Dev
 2)  Forked library was cloned to local drive (`$ git clone https://github.com/VooduVibe-Dev/matrix-ios-sdk.git`)
-3)  Cloned version on local drive was reset to version 0.6.17 (`$ git reset c8792a1`) dated 30 Sep 2016
+3)  Cloned version on local drive was reset to version 0.6.17 (`$ git reset c8792a1`) dated 27 Sep 2016
 4)  Changes were removed (`$ git add && git stash`)
 5)  New local version (0.6.17) was pushed back to forked GitHub repository (`$ git push --force`)
 
