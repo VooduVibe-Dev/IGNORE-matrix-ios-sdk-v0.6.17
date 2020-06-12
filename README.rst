@@ -11,6 +11,7 @@ This library was forked from latest version of repository using the following st
 3)  Cloned version on local drive was reset to version 0.6.17 (`$ git reset c8792a1`) dated 27 Sep 2016
 4)  Changes were removed (`$ git add && git stash`)
 5)  New local version (0.6.17) was pushed back to forked GitHub repository (`$ git push --force`)
+6)  Repository was renamed to matrix-ios-sdk-v0.6.17 (https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git)
 
 
 Introduction (Relates to Latest MatrixSDK)
