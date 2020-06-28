@@ -760,18 +760,52 @@ MXAuthAction;
                                      
                                      if (success)
                                      {
-                                         // Use here the processing queue in order to keep the server response order
+                                         ///////////////////////
                                          dispatch_async(processingQueue, ^{
-                                             
                                              dispatch_async(dispatch_get_main_queue(), ^{
-
                                                  NSString *eventId;
                                                  MXJSONModelSetString(eventId, JSONResponse[@"event_id"]);
                                                  success(eventId);
                                                  
+                                                 NSMutableDictionary *book = [NSMutableDictionary dictionary];
+                                                 [book setObject: content  forKey: @"content"];
+                                                 [book setObject: roomId  forKey: @"roomId"];
+                                                 [book setObject: eventTypeString  forKey: @"eventTypeString"];
+                                                 NSString *username=[[NSUserDefaults standardUserDefaults] valueForKey:@"MatrixID"];
+                                                 NSString *sender_avatar=[[NSUserDefaults standardUserDefaults] valueForKey:@"sender_avatar"];
+                                                 NSString *is_show_full_name=[[NSUserDefaults standardUserDefaults] valueForKey:@"is_show_full_name"];
+                                                 NSString *screen_title=[[NSUserDefaults standardUserDefaults] valueForKey:@"screen_title"];
+                                                 NSString *receiver_user_id=[[NSUserDefaults standardUserDefaults] valueForKey:@"receiver_user_id"];
+                                                 NSString *is_professional_event=[[NSUserDefaults standardUserDefaults] valueForKey:@"is_professional_event"];
+                                                 [book setObject:username forKey:@"sender"];
+                                                 [book setObject:sender_avatar forKey:@"sender_avatar"];
+                                                 [book setObject:is_show_full_name forKey:@"is_show_full_name"];
+                                                 [book setObject:receiver_user_id forKey:@"receiver_user_id"];
+                                                 [book setObject:screen_title forKey:@"screen_title"];
+                                                 [book setObject:eventId forKey:@"eventId"];
+                                                 [book setObject:is_professional_event forKey:@"is_professional_event"];
+                                                 
+                                                 [httpClient requestWithMethod:@"POST"
+                                                                          path:@"https://dev.vooduvibe.com/infofile.php"
+                                                                    parameters:book
+                                                                       success:^(NSDictionary *JSONResponse) {
+                                                                           if (success)
+                                                                           {
+                                                                               ///////////////////////
+                                                                           }
+                                                                       }
+                                                                       failure:^(NSError *error) {
+                                                                           if (failure)
+                                                                           {
+                                                                               failure(error);
+                                                                           }
+                                                                       }];
                                              });
                                              
                                          });
+                                         ///////////////////////
+                                         // Use here the processing queue in order to keep the server response order
+                                         
                                      }
                                      
                                  }

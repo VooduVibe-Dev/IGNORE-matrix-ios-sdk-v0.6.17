@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/matrix-org/matrix-ios-sdk.git", :tag => "v0.6.17" }
+  s.source       = { :git => "https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git" }
   s.source_files = "MatrixSDK", "MatrixSDK/**/*.{h,m}"
   s.resources    = "MatrixSDK/Data/Store/MXCoreDataStore/*.xcdatamodeld"
 
