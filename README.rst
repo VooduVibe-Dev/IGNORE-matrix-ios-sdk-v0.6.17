@@ -13,6 +13,26 @@ This library was forked from latest version of repository using the following st
 5)  New local version (0.6.17) was pushed back to forked GitHub repository (`$ git push --force`)
 6)  Repository was renamed to matrix-ios-sdk-v0.6.17 (https://github.com/VooduVibe-Dev/matrix-ios-sdk-v0.6.17.git)
 
+Making the Amendments to Local Version of 0.6.17
+-------
+
+The repository was cloned to a local directory where amendments were made to reflect the customizations made to MatrixSDK to fit the requirements of juuj
+
+These amendements were made by comparing the repository with Kannan's (and our project's) version of MatrixKit held in this private repository (https://github.com/VooduVibe-Dev/MatrixSDK.git). The changes made were not signification.
+
+Our version of 0.6.17 has a few more files and folders than Kannan's private repository, and these are noted in (Changes-to-Forked-MatrixSDK-0.6.17-Library). We have not made any changes to these files and folders.
+
+
+Pushing Amendments to 0.6.17 to GitHub Repository
+-------
+
+Pushed by implementing the following git commands::
+
+$ git add .
+$ git commit -m "add juuj customizations"
+$ git push 
+
+
 Installing Pod
 -------
 
